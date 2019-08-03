@@ -20,3 +20,8 @@ Route::get('/about', [
 	'as'=>'about',
 	'uses'=>'PagesControlleur@about'
 ]);
+
+Route::get('/contact', [
+	'as'=>'contact',
+	'uses'=>'Contactscontrolleur@create'
+]);

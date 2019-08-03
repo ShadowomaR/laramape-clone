@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class Pagescontrolleur extends Controller {
+class Contactscontrolleur extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -24,7 +24,7 @@ class Pagescontrolleur extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return view('Contacts.create');
 	}
 
 	/**
@@ -81,14 +81,4 @@ class Pagescontrolleur extends Controller {
 		//
 	}
 
-	public function home()
-	{
-		return view('pages.home');
-	}
-
-	public function about()
-	{
-		return view('pages.about');
-	}
-	
 }
