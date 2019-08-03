@@ -8,3 +8,7 @@ html {
 footer{
   margin: 4em 0;
 }
+.active{
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 5px
+}
