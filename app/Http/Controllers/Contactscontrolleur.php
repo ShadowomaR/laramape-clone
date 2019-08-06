@@ -2,6 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ContactRequest;
 
 use Illuminate\Http\Request;
 
@@ -32,9 +33,13 @@ class Contactscontrolleur extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(ContactRequest $request)
 	{
-		//
+		/*$this->validate($request,[
+			'name'=>'required|min:3',
+			'email'=>'required|email',
+			'message'=>'required|min:10',
+		]);*/
 	}
 
 	/**

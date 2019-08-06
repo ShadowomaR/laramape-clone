@@ -1,0 +1,23 @@
+[33mcommit 01b1f026219135a946546365f63a3ea30feb3fa3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Guermoudi Omar <germani.shadow@gmail.com>
+Date:   Sat Aug 3 15:00:13 2019 +0200
+
+    crée age contact
+
+[33mcommit 4c4e28d578bdc6eefe27024f1c6f2c6648ebc6d6[m
+Author: Guermoudi Omar <germani.shadow@gmail.com>
+Date:   Sat Aug 3 14:00:29 2019 +0200
+
+    add page not fond
+
+[33mcommit 7729189513de8f939f757e7bc0ca05df401e6df2[m
+Author: Guermoudi Omar <germani.shadow@gmail.com>
+Date:   Sat Aug 3 13:38:47 2019 +0200
+
+    add active to navbar
+
+[33mcommit 220d3076318856a137f3deb17b8f024d817445d1[m
+Author: Guermoudi Omar <germani.shadow@gmail.com>
+Date:   Sat Aug 3 10:30:11 2019 +0200
+
+    Demarer le projet et creé 2 static page home et about
