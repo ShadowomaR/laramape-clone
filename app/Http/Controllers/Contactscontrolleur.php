@@ -1,9 +1,11 @@
-<?php namespace App\Http\Controllers;
+<?php 
+namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ContactRequest;
 
+use App\Http\Requests\ContactRequest;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
 class Contactscontrolleur extends Controller {
@@ -40,6 +42,12 @@ class Contactscontrolleur extends Controller {
 			'email'=>'required|email',
 			'message'=>'required|min:10',
 		]);*/
+		Mail::send('emails.mails', ['key' => 'value'], function($message)
+		{
+			
+    		$message->to($request->email, $request->name)->subject($request->msg);
+		});
+		dd('Done');
 	}
 
 	/**

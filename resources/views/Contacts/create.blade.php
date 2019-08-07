@@ -20,9 +20,9 @@
                     {!! $errors->first('email','<div class="invalid-feedback">:message</div>') !!}
                 </div> 
                 <div class="form-group ">
-                    <label for="message" class="sr-only">Message :</label>
-                <textarea class="form-control {!! $errors->first('message','is-invalid') !!}" name="message" id="message" cols="10" rows="10" required>{{old('message')}}</textarea>
-                    {!! $errors->first('message','<div class="invalid-feedback">:message</div>') !!}
+                    <label for="msg" class="sr-only">Message :</label>
+                <textarea class="form-control {!! $errors->first('msg','is-invalid') !!}" name="msg" id="msg" cols="10" rows="10" required>{{old('msg')}}</textarea>
+                    {!! $errors->first('msg','<div class="invalid-feedback">:message</div>') !!}
                 </div>     
                 <button class="btn btn-dark btn-block" type="submit">Submit</button>
             </form>

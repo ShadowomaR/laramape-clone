@@ -24,7 +24,7 @@ class ContactRequest extends Request {
 		return [
 			'name'=>'required|min:3',
 			'email'=>'required|email',
-			'message'=>'required|min:10',
+			'msg'=>'required|min:10',
 		];
 	}
 
