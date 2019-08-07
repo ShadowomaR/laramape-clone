@@ -37,17 +37,11 @@ class Contactscontrolleur extends Controller {
 	 */
 	public function store(ContactRequest $request)
 	{
-		/*$this->validate($request,[
-			'name'=>'required|min:3',
-			'email'=>'required|email',
-			'message'=>'required|min:10',
-		]);*/
-		Mail::send('emails.mails', ['key' => 'value'], function($message)
+		Mail::send('emails.mails', ['email' => $request->email], function($message)
 		{
-			
-    		$message->to($request->email, $request->name)->subject($request->msg);
+			//$message->to(email, 'John Smith')->subject('Welcome!');
 		});
-		dd('Done');
+		return redirect()->route('home');
 	}
 
 	/**
