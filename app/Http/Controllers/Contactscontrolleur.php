@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\Models\Messages;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
@@ -37,6 +37,12 @@ class Contactscontrolleur extends Controller {
 	 */
 	public function store(ContactRequest $request)
 	{
+		Messages::create([
+			'name'=>$request->name,
+			'email'=>$request->email,
+			'msg'=>$request->msg
+		]);
+
 		Mail::send('emails.mails', ['email' => $request->email,'name' => $request->name,'msg' => $request->msg,], function($message)
 		{
 			//$message->to(email, 'John Smith')->subject('Welcome!');
