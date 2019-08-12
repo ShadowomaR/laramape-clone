@@ -37,7 +37,7 @@ class Contactscontrolleur extends Controller {
 	 */
 	public function store(ContactRequest $request)
 	{
-		Mail::send('emails.mails', ['email' => $request->email], function($message)
+		Mail::send('emails.mails', ['email' => $request->email,'name' => $request->name,'msg' => $request->msg,], function($message)
 		{
 			//$message->to(email, 'John Smith')->subject('Welcome!');
 		});

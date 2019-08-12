@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => 'Laracarte@admin.com', 'name' => null],
+	'from' => ['address' => config('laracarte.support_email'), 'name' => 'Laracarte'],
 
 	/*
 	|--------------------------------------------------------------------------

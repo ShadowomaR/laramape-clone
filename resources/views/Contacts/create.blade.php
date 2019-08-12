@@ -6,7 +6,7 @@
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-8 col-sm-10 ">
             <h2>Get In Touch</h2>
-            <p>If you havign trouble with this service,Please <a href="">Ask for help</a>.</p>
+        <p>If you havign trouble with this service,Please <a href="mailto:{{config('laracarte.support_email')}}">Ask for help</a>.</p>
             <form class="needs-validation" action="{{ route('contact')}}" method="post">                
                 <input type="hidden"  name="_token" value="{{ csrf_token() }}">
                 <div class="form-group ">
